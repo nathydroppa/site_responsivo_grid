@@ -1,0 +1,52 @@
+.app {
+    background: #f1f1f1;
+    display: grid; /* a classe app faz parte do body que é pai do header, main e footer, logo temos que 
+    aplicar o grid nele para que todo site funcione no modo grid*/ 
+    font-family: Arial, Helvetica, sans-serif; 
+    grid-template-areas:  
+        "cabecalho"
+         "conteudo" 
+          "rodape"; /*Definimos as áreas que o grid terá*/
+    grid-template-columns: auto;  /* Definimos quantas colunas o grid terá*/
+    grid-template-rows: 50px auto  auto; /*Definimos o tamanho que cada linha do grid terá*/
+}  
+   
+.cabecalho {
+    align-items: center;
+    display: flex;
+    grid-area: cabecalho;  /*grid-area é usado para nomear as areas para que o templete areas faça a associação*/
+    padding: 0 2rem;
+}
+    
+.conteudo {
+    grid-area: conteudo;
+    padding: 0 2rem;
+}  
+   
+.rodape {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    grid-area: rodape;
+    padding: 1rem;
+    text-align: center;
+}    
+  
+   
+   
+   
+   
+  
+  
+    
+  
+   
+  
+   
+   
+   
+   
+ 
+   
+   
+   
